@@ -4,11 +4,38 @@ body {
 }
 article {
     background-color: rgb(44,43,43);
-}
-.resaltado {
-    color: yellow;
+    border-bottom:1px solid white;
+    padding: 1.5rem;
 }
 #titulo_del_blog {
     text-align: center;
     font-size: 3rem;
 }
+.resaltado {
+    color: yellow;
+}
+nav>ul>li{
+    list-style: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color:#fff;
+}
+#footer_del_blog{
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0 4rem 0;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+.ilustracion{
+    border: #fff 4px solid;
+    display: inline-block;
+}
+.ilustracion_figcaption{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-style: italic;
+}
+
