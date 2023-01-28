@@ -21,13 +21,15 @@ nav>ul>li>a{
     text-decoration: none;
     color:#fff;
 }
-#footer_del_blog{
-    margin: 2rem;
+#footer_blog {
     display: flex;
     align-items: center;
-    padding: 4rem 0 4rem 0;
     justify-content: space-between;
+    padding: 4rem 0;
     font-size: 1.3rem;
+}
+#footer_blog div:nth-child(2) {
+    font-size: 0.9rem;
 }
 .ilustracion{
     border: #fff 4px solid;
@@ -38,4 +40,78 @@ nav>ul>li>a{
     margin-left: 1rem;
     font-style: italic;
 }
+/* grid */
+section {
+    
+    /* despliégate como  grid */
+    display: grid;
+    /* Crea 12 columnas cada una de una fracción usando la función repeat*/
+    grid-template-columns: repeat(12, 1fr);
+    /* deja que las filas(renglones) ocupen el alto que necesitan */
+    grid-auto-rows: auto;
+    /* añade un espacio entre los elementos del grid de 3rem */
+    gap: 3rem;
+}
 
+/* Termina grid */
+section>header {
+    /* esta sección se extenderá 12 columnas. */
+    grid-column: span 12;
+}
+body>section>main {
+    grid-column: span 8;
+}
+body>section>aside {
+    grid-column: span 4;
+}
+body>section>footer {
+    grid-column: span 12;
+}
+body>nav {
+    font-size: 1.3rem;
+    border-bottom: 5px solid white;
+}
+nav li:hover a {
+    text-decoration: underline;
+    color: greenyellow;
+}
+nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
+}
+article>header>hgroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+header>article>hgroup>h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header>article>hgroup>h2>img {
+    margin-right: 1rem;
+}
+aside>h2 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+aside div:nth-child(even) {
+    /* Estilos para los div pares */
+    background-color: rgb(44, 43, 43);
+}
+aside div img {
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+aside div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.6rem;
+    border-bottom: 1px dashed #fff;
+}
