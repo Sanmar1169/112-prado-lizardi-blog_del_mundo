@@ -22,6 +22,7 @@ nav>ul>li>a{
     text-decoration: none;
     color:#fff;
 }
+
 #footer_blog {
     display: flex;
     align-items: center;
@@ -59,11 +60,22 @@ section>header {
     /* esta sección se extenderá 12 columnas. */
     grid-column: span 12;
 }
-body>section>main {
-    grid-column: span 8;
+main {
+    grid-column: span 12;
 }
-body>section>aside {
-    grid-column: span 4;
+
+@media (min-width: 1024.1px) {
+    main {
+        grid-column: span 8;
+    }
+}
+aside {
+    grid-column: span 12;
+}
+@media (min-width: 1024.1px) {
+    aside {
+        grid-column: span 4;
+    }
 }
 body>section>footer {
     grid-column: span 12;
@@ -113,6 +125,11 @@ aside div {
     gap: 1rem;
     padding: 0.6rem;
     border-bottom: 1px dashed #fff;
+}
+@media (min-width: 1024.1px) and (max-width: 1324.1px) {
+    aside div {
+        flex-direction: column;
+    }
 }
 nav ul {
     display: grid;
