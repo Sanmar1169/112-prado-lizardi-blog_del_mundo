@@ -150,3 +150,17 @@ nav ul {
         border-bottom: 5px solid red;
     }
 }
+@media (max-width: 1024.1px) {
+    #footer_blog {
+        flex-direction: column;
+    }
+}
+
+n #footer_blog div:nth-child(2) {
+    font-size: 0.9rem;
+}
+#titulo_del_blog {
+    text-align: center;
+    font-size: clamp(2rem, calc(1vw + 2rem), 7rem);
+    padding-top: 4.5rem;
+}
